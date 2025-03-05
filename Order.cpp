@@ -34,7 +34,7 @@ void Order::setTime(int time) {
 }
 
 float Order::getDiscount() const {
-    return discount
+    return discount;
 }
 
 void Order::setDiscount(float discount) {
