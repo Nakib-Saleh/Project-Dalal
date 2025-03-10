@@ -12,7 +12,7 @@ int Review::getRating() const {
     return rating;
 }
 
-int Review::setRating(int rating) {
+void Review::setRating(int rating) {
     if(rating < 0 || rating > 5) {
         throw OutOfBoundException();
     }

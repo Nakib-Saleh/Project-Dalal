@@ -10,5 +10,4 @@ public:
     OneTimeOrder();
     bool getStatus() const;
     void markAsCompleted();
-    virtual bool getStatus() const = 0;
 };

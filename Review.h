@@ -22,5 +22,5 @@ public:
 
     int getRating() const;
 
-    int setRating(int rating);
+    void setRating(int rating);
 };

@@ -12,14 +12,6 @@ void Product::setPrice(int price) {
     this->price = price;
 }
 
-Vendor* Product::getVendor() const {
-    return vendor;
-}
-
-void Product::setVendor(Vendor* vendor) {
-    this->vendor = vendor;
-}
-
 int Product::getReviewCount() const {
     return reviews.size();
 }

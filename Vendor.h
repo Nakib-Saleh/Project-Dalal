@@ -1,5 +1,6 @@
-#pragma once;
+#pragma once
 
+#include <vector>
 #include "User.h"
 #include "Product.h"
 #include "Order.h"

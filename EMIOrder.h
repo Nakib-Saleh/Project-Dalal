@@ -1,8 +1,9 @@
 #pragma once
 
+#include "Order.h"
 #include <ctime>
 
-class EMIOrder {
+class EMIOrder : public Order {
 private:
     float due, minimumPayment;
     time_t expiryDate;
