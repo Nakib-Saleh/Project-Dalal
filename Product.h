@@ -11,13 +11,14 @@ using namespace std;
 class Product {
 private:
     int price;
-    class InvalidPriceException {};
-    class NoReviewException {};
     Vendor* vendor;
     vector<Review*> reviews;
 public:
     string name;
     string description;
+
+    class InvalidPriceException {};
+    class NoReviewException {};
 
     int getPrice() const;
     void setPrice(int price);
@@ -25,5 +26,5 @@ public:
     void setVendor(Vendor* vendor);
     int getReviewCount() const;
     void addReview(Review* review);
-    int getAvgRating() const;
+    float getAvgRating() const;
 };

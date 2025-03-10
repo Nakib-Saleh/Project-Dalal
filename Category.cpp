@@ -8,7 +8,7 @@ int CategoryManager::getCount() {
     return categories.size();
 }
 
-int CategoryManager::addCategory(Category* category) {
+void CategoryManager::addCategory(Category* category) {
     if(categories.find(category) == categories.end()) {
         throw DuplicateCategoryException();
     }

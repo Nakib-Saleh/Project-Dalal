@@ -28,7 +28,7 @@ void Product::addReview(Review* review) {
     reviews.push_back(review);
 }
 
-int Product::getAvgRating() const {
+float Product::getAvgRating() const {
     if(getReviewCount()) {
         throw NoReviewException();
     }

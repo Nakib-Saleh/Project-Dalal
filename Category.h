@@ -17,6 +17,6 @@ private:
 public:
     set<Category*> getCategories() const;
     int getCount();
-    int addCategory(Category* category);
+    void addCategory(Category* category);
     bool removeCategory(Category* category);
 };
